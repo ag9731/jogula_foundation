@@ -4,7 +4,7 @@ import Section2 from './Section2/Section2'
 
 const Home = () => {
   return (
-    <div>
+    <div className='flex flex-col gap-11'>
       <Section1/>
       <Section2/>
     </div>
