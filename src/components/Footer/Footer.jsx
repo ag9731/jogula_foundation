@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -15,7 +16,7 @@ const Footer = () => {
           <h1 className="text-xl font-bold mb-4">Quick Links</h1>
           <ul className="text-center md:text-left">
             <li className="mb-2">
-              <Link to="/" onClick={closeMenu}>
+              <Link to="/">
                 Home
               </Link>
             </li>

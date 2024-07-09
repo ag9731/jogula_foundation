@@ -7,7 +7,7 @@ const WhatsAppButton = () => {
   return (
     <div className="floating-whatsapp">
       <FloatingWhatsApp
-        phoneNumber="+919380128840"
+        phoneNumber="+919611295969"
         accountName="Jogula Foundation NGO"
         avatar="path/to/your/avatar.jpg" // Optional
         statusMessage="Typically replies within 1 hour" // Optional
