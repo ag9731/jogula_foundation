@@ -1,5 +1,6 @@
 import React from "react";
 import sponser_food from "../../assets/Images/BannerImages/sponser_food.jpeg";
+import { Link } from "react-router-dom";
 
 const SponserFood = () => {
   return (
@@ -35,13 +36,18 @@ const SponserFood = () => {
               <div className="shadow-lg h-[40vh] flex items-center gap-5 justify-center flex-col p-4">
                 <h1 className="text-xl md:text-2xl font-bold">BREAKFAST</h1>
                 <button className="bg-slate-900 text-white py-2 px-5">
+                  <Link to="/sponser-education" >
+                    DONATE
+                  </Link>
                   DONATE INR 1000
                 </button>
               </div>
               <div className="shadow-lg h-[40vh] flex items-center gap-5 justify-center flex-col p-4">
                 <h1 className="text-xl md:text-2xl font-bold">LUNCH</h1>
                 <button className="bg-slate-900 text-white py-2 px-5">
-                  DONATE INR 1700
+                  <Link to="/sponser-education" >
+                    DONATE INR 1700
+                  </Link>
                 </button>
               </div>
             </div>
@@ -49,19 +55,25 @@ const SponserFood = () => {
               <div className="shadow-lg h-[40vh] flex items-center gap-5 justify-center flex-col p-4">
                 <h1 className="text-xl md:text-2xl font-bold">HOLIGE FOOD</h1>
                 <button className="bg-slate-900 text-white py-2 px-5">
-                  DONATE INR 2200
+                  <Link to="/sponser-education">
+                    DONATE INR 2200
+                  </Link>
                 </button>
               </div>
               <div className="shadow-lg flex items-center h-[40vh] gap-5 justify-center flex-col p-4">
                 <h1 className="text-xl md:text-2xl font-bold">NONVEG FOOD</h1>
                 <button className="bg-slate-900 text-white py-2 px-5">
-                  DONATE INR 3000
+                  <Link to="/sponser-education" >
+                    DONATE INR 3000
+                  </Link>
                 </button>
               </div>
               <div className="shadow-lg flex items-center gap-5  h-[40vh] justify-center flex-col p-4">
                 <h1 className="text-xl md:text-2xl font-bold">FULL DAY FOOD</h1>
                 <button className="bg-slate-900 text-white py-2 px-5">
-                  DONATE INR 4800
+                  <Link to="/sponser-education" >
+                    DONATE INR 4800
+                  </Link>
                 </button>
               </div>
             </div>
