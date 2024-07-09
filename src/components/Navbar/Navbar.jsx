@@ -1,46 +1,65 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaAngleDown } from "react-icons/fa6";
+import { FaAngleDown, FaAlignJustify, FaXmark } from "react-icons/fa6";
 import "./Navbar.css";
 
-
 const Navbar = () => {
-  const[showDropdown, setShowDropdown] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
+  // Toggle Menu
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  // Drop Down
   const handleClick = () => {
     setShowDropdown(true);
-  }
+  };
 
   const handleClose = () => {
     setShowDropdown(false);
-  }
+  };
+
+  // Close Menu on Link Click
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
 
   return (
-    // Main
     <div className="flex justify-center items-center bg-[#ECECF9]">
-      {/* logo */}
-      <div className="flex items-center justify-between w-[95%] ">
+      <div className="flex menuParent items-center justify-between w-[95%] ">
         <div>
           <img
             className="w-16 md:w-80 md:min-w-8 sm:w-36 lg:w-32"
             src="/images/jogula_ngo_foundation_logo.png"
-            alt=""
+            alt="Logo"
           />
         </div>
 
         {/* Menu */}
-        <div className="flex">
-          <ul className="uppercase  flex flex-col md:flex-row gap-16 list-none text-black font-semibold">
+        <div className={`menuMain ${showMenu ? "active" : ""}`}>
+          <ul className="uppercase flex flex-col justify-center xl:flex-row lg:flex-row md:flex-row sm:flex-col gap-6 xl:gap-16 lg:gap-16 md:gap-14 sm:gap-10 list-none text-black font-semibold">
             <li className="hover:text-[#0e89d1] cursor-pointer">
-              {" "}
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={closeMenu}>
+                Home
+              </Link>
             </li>
             <li className="hover:text-[#0e89d1] cursor-pointer">
-              <Link to="/about-us">About</Link>
+              <Link to="/about-us" onClick={closeMenu}>
+                About
+              </Link>
             </li>
-            <li className="hover:text-[#0e89d1] cursor-pointer">Volunteer</li>
+            <li
+              className="hover:text-[#0e89d1] cursor-pointer"
+              onClick={closeMenu}
+            >
+              Volunteer
+            </li>
             <li className="hover:text-[#0e89d1] cursor-pointer">
-              <Link to="/about-us">Activities</Link>
+              <Link to="/about-us" onClick={closeMenu}>
+                Activities
+              </Link>
             </li>
             <div
               className="dropdown relative flex items-center gap-2 cursor-pointer"
@@ -57,21 +76,29 @@ const Navbar = () => {
               </div>
 
               {showDropdown && (
-                <div className="drop absolute top-6 shadow-md bg-white left-0 text-black">
-                  <ul className="flex flex-col items-start pt-3 pb-3 pl-3 w-52">
+                <div className="drop absolute top-6 shadow-md bg-white left-[10px] md:left-0 text-black">
+                  <ul className="flex flex-col items-start pt-3 pb-3 pl-3 w-52 xl:pt-3 xl:pb-3 xl:pl-3 xl:w-52 sm:w-96">
                     <li className="border-b-2 border-blue-500">
-                      <Link to="/sponser-education">Sponser Education</Link>
+                      <Link to="/sponser-education" onClick={closeMenu}>
+                        Sponser Education
+                      </Link>
                     </li>
                     <li>
-                      <Link to="/sponser-food">Sponser Food</Link>
-                      
+                      <Link to="/sponser-food" onClick={closeMenu}>
+                        Sponser Food
+                      </Link>
                     </li>
                   </ul>
                 </div>
               )}
             </div>
-            <li className="hover:text-[#0e89d1] cursor-pointer">Gallery</li>
-            <li className="hover:text-[#0e89d1] cursor-pointer">Contact</li>
+            <li
+              className="hover:text-[#0e89d1] cursor-pointer"
+              onClick={closeMenu}
+            >
+              Gallery
+            </li>
+            <li className="hover:text-[#0e89d1] cursor-pointer" onClick={closeMenu}>Contact</li>
           </ul>
         </div>
 
@@ -81,9 +108,14 @@ const Navbar = () => {
             DONATE
           </button>
         </div>
+
+        {/* Mobile Icons */}
+        <div className="mobileIcons" onClick={toggleMenu}>
+          {showMenu ? <FaXmark /> : <FaAlignJustify />}
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

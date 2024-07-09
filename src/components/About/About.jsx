@@ -1,41 +1,38 @@
 import React from "react";
 import AboutUsBanner from "../../assets/Images/About_Us/AboutUsNew.webp";
 import Section2 from "../../assets/Images/About_Us/JOGULA_N_1.jpg";
-import "./About.css";
 
 const About = () => {
   return (
     <>
-      <div className="main">
-        <div className="flex flex-1">
-          <div className="grid grid-cols-2 w-full">
-            <div className="AboutSec1Head flex justify-center items-center bg-[#83573c]">
-              <h1 className="text-white text-6xl">ABOUT US</h1>
-            </div>
-            <div className="flex justify-center items-center">
-              <img
-                className="w-full h-auto"
-                src={AboutUsBanner}
-                alt="About Us"
-              />
-            </div>
-          </div>
+      {/* Section 1 */}
+      <div className="flex flex-col md:flex-row w-full">
+        <div className="flex justify-center items-center bg-[#83573c] w-full md:w-1/2">
+          <h1 className="text-white text-3xl md:text-6xl">ABOUT US</h1>
+        </div>
+        <div className="flex justify-center items-center w-full md:w-1/2">
+          <img className="w-full h-auto" src={AboutUsBanner} alt="About Us" />
         </div>
       </div>
 
-      {/* Section2 */}
-
-      <div className=" flex justify-center items-center mt-16">
-        <div className="flex flex-1 w-[90%] gap-10 justify-center">
-          <div className="imgSection w-50%">
-            <img src={Section2} className="rounded-lg" alt="" />
+      {/* Section 2 */}
+      <div className="flex justify-center items-center mt-16 px-4 md:px-0">
+        <div className="flex flex-col md:flex-row w-full md:w-[90%] gap-10 justify-center">
+          <div className="w-full md:w-1/2">
+            <img
+              src={Section2}
+              className="rounded-lg w-full h-auto"
+              alt="Section Image"
+            />
           </div>
-          <div className="desc flex flex-col gap-6 font-semibold text-lg justify-center w-[50%]">
-            <h1 className="text-3xl font-medium">JOGULA NGO FOUNDATION</h1>
+          <div className="flex flex-col gap-6 font-semibold text-base md:text-lg justify-center w-full md:w-1/2">
+            <h1 className="text-2xl md:text-3xl font-medium">
+              JOGULA NGO FOUNDATION
+            </h1>
             <p className="text-[#62615C]">
               Jogula NGO Foundation is a non-profit organization dedicated to
               improving the lives of children in need across India. Our
-              organization was founded in 2019 -20 with a mission to provide
+              organization was founded in 2019-20 with a mission to provide
               access to basic necessities, education, and healthcare services to
               children who need it the most.
             </p>
@@ -70,13 +67,15 @@ const About = () => {
         </div>
       </div>
 
-      {/* Section3 */}
-      <div className=" flex justify-center items-center mt-6">
-        <div className="flex flex-col  w-[80%]  gap-10 justify-center">
+      {/* Section 3 */}
+      <div className="flex justify-center items-center mt-6 px-4 md:px-0">
+        <div className="flex flex-col w-full md:w-[80%] gap-10 justify-center">
           <div>
-            <h1 className="text-3xl font-bold">About the Founders</h1>
+            <h1 className="text-2xl md:text-3xl font-bold">
+              About the Founders
+            </h1>
           </div>
-          <div className="flex flex-col gap-3 font-medium text-lg">
+          <div className="flex flex-col gap-3 font-medium text-base md:text-lg">
             <p className="text-[#000] text-justify">
               Harini, Meena, and Hanumanatharaya are the dedicated founders and
               trustees of Jogula NGO Child Foundation. Together, they work
@@ -117,14 +116,20 @@ const About = () => {
       </div>
 
       {/* Section 4 */}
-      <div className=" flex justify-center items-center mt-6 py-4">
-        <div className="flex justify-between items-center  w-[80%] py-10 px-10 gap-10 bg-[#1670c0]">
-          <div>
-            <h1 className="text-3xl font-medium text-white">PLEASE RAISE YOUR HAND</h1>
-            <p className="font-bold">“You must be tile change You want to see in the world.”</p>
+      <div className="flex justify-center items-center mt-6 py-4 px-4 md:px-0">
+        <div className="flex flex-col md:flex-row justify-between items-center w-full md:w-[80%] py-10 px-4 md:px-10 gap-10 bg-[#1670c0]">
+          <div className="text-center md:text-left">
+            <h1 className="text-2xl md:text-3xl font-medium text-white">
+              PLEASE RAISE YOUR HAND
+            </h1>
+            <p className="font-bold text-white">
+              “You must be the change You want to see in the world.”
+            </p>
           </div>
           <div>
-            <button className="bg-[#fff] px-8 py-3 font-bold rounded-md">Donate Now</button>
+            <button className="bg-white px-8 py-3 font-bold rounded-md">
+              Donate Now
+            </button>
           </div>
         </div>
       </div>

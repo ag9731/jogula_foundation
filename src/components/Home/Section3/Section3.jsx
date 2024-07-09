@@ -30,7 +30,7 @@ const Section3 = () => {
   ];
   return (
     <>
-      <div className="Section3main">
+      <div className="Section3main w-[100%] flex justify-center">
         <div className="Section3Child">
           {array.map((items, index) => (
             <>
@@ -47,7 +47,7 @@ const Section3 = () => {
                   <h2 className="text-3xl font-medium text-center">
                     {items.title}
                   </h2>
-                  <p>{items.desc}</p>
+                  <p className="para">{items.desc}</p>
                 </div>
               </div>
             </>
