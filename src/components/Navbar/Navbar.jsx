@@ -114,7 +114,9 @@ const Navbar = () => {
         {/* Button */}
         <div>
           <button className="bg-[#1670c0] py-2 px-10 rounded text-white font-bold tracking-wide hover:bg-black hover:border-white">
-            DONATE
+            <Link to="/sponser-education" onClick={closeMenu}>
+              DONATE
+            </Link>
           </button>
         </div>
 
