@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import { FaAngleDown } from "react-icons/fa6";
+import "./Navbar.css";
+
 
 const Navbar = () => {
+  const[showDropdown, setShowDropdown] = useState(false);
+
+  const handleClick = () => {
+    setShowDropdown(true);
+  }
+
+  const handleClose = () => {
+    setShowDropdown(false);
+  }
+
   return (
     // Main
     <div className="flex justify-center items-center bg-[#ECECF9]">
@@ -25,10 +38,38 @@ const Navbar = () => {
             <li className="hover:text-[#0e89d1] cursor-pointer">
               <Link to="/about-us">About</Link>
             </li>
+            <li className="hover:text-[#0e89d1] cursor-pointer">Volunteer</li>
             <li className="hover:text-[#0e89d1] cursor-pointer">
-              <Link to="/your-help">Volunteer</Link>
+              <Link to="/about-us">Activities</Link>
             </li>
-            <li className="hover:text-[#0e89d1] cursor-pointer">Activities</li>
+            <div
+              className="dropdown relative flex items-center gap-2 cursor-pointer"
+              onMouseOver={handleClick}
+              onMouseLeave={handleClose}
+            >
+              <div>
+                <li className="hover:text-[#0e89d1] cursor-pointer">
+                  <Link to="/your-help">Your Help</Link>
+                </li>
+              </div>
+              <div>
+                <FaAngleDown />
+              </div>
+
+              {showDropdown && (
+                <div className="drop absolute top-6 shadow-md bg-white left-0 text-black">
+                  <ul className="flex flex-col items-start pt-3 pb-3 pl-3 w-52">
+                    <li className="border-b-2 border-blue-500">
+                      <Link to="/sponser-education">Sponser Education</Link>
+                    </li>
+                    <li>
+                      <Link to="/sponser-food">Sponser Food</Link>
+                      
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
             <li className="hover:text-[#0e89d1] cursor-pointer">Gallery</li>
             <li className="hover:text-[#0e89d1] cursor-pointer">Contact</li>
           </ul>
