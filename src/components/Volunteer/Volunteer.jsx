@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import "./Volunteer.css";
 
 const Volunteer = () => {
@@ -20,10 +21,10 @@ const Volunteer = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_015niaa", // Replace with your EmailJS service ID
+        "template_00iqdwk", // Replace with your EmailJS template ID
         e.target,
-        "YOUR_USER_ID" // Replace with your EmailJS user ID
+        "cWgrspUo4bPeXc8ky" // Replace with your EmailJS user ID
       )
       .then(
         (result) => {

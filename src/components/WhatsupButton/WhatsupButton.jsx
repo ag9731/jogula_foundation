@@ -1,0 +1,23 @@
+// src/components/WhatsAppButton.js
+import React from "react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+// import "./WhatsupButton.css"; 
+
+const WhatsAppButton = () => {
+  return (
+    <div className="floating-whatsapp">
+      <FloatingWhatsApp
+        phoneNumber="+919380128840"
+        accountName="Jogula Foundation NGO"
+        avatar="path/to/your/avatar.jpg" // Optional
+        statusMessage="Typically replies within 1 hour" // Optional
+        chatMessage="Hello! How can I help you?" // Optional
+        allowClickAway // Optional
+        notification // Optional
+        notificationDelay={60000} // Optional
+      />
+    </div>
+  );
+};
+
+export default WhatsAppButton;

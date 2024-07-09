@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-xl font-bold mb-4">About Us</h1>
           <p className="text-center md:text-left">
-            We Concern Foundation warmly welcomes you. We are a beacon of hope
+            Jpgula NGO Foundation warmly welcomes you. We are a beacon of hope
             for children in need of basic necessities.
           </p>
         </div>
@@ -16,15 +16,22 @@ const Footer = () => {
           <ul className="text-center md:text-left">
             <li className="mb-2">HOME</li>
             <li className="mb-2">ABOUT</li>
-            <li className="mb-2">CONTACT</li>
             <li className="mb-2">VOLUNTEER</li>
+            <li className="mb-2">CONTACT</li>
           </ul>
         </div>
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-xl font-bold mb-4">Get In Touch</h1>
-          <p className="mb-2 text-center md:text-left">Phone</p>
-          <p className="mb-2 text-center md:text-left">Email</p>
-          <p className="text-center md:text-left">Address</p>
+          <p className="mb-2 text-center md:text-left">
+            <span className="font-bold">Phone:</span> +91 9611295969
+          </p>
+          <p className="mb-2 text-center md:text-left">
+            <span className="font-bold">Email:</span> jogulafoundation@gmail.com
+          </p>
+          <p className="text-center md:text-left">
+            <span className="font-bold">Address:</span> No.32/2
+            Doddabhidrakallu,Near Gurushree School, Nagasandra, Bangalore 560073
+          </p>
         </div>
       </div>
     </div>

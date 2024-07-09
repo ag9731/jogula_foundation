@@ -19,6 +19,9 @@ const Section2 = () => {
           </div>
         </div>
 
+        {/* Gallery */}
+        
+
         {/* About jogula foundation*/}
         <div className="flex flex-col-reverse justify-around lg:flex-row xl:flex-row md:flex-row sm:flex-col-reverse align-content-center items-center">
           <div className="desc flex flex-col gap-6 font-semibold text-lg justify-center w-[100%] lg:w-[50%] xl:w-[50%] md:w-[50%] sm:w-[100%]">
