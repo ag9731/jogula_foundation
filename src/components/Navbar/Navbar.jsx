@@ -54,10 +54,12 @@ const Navbar = () => {
               className="hover:text-[#0e89d1] cursor-pointer"
               onClick={closeMenu}
             >
-              Volunteer
+              <Link to="/volunteer" onClick={closeMenu}>
+                Volunteer
+              </Link>
             </li>
             <li className="hover:text-[#0e89d1] cursor-pointer">
-              <Link to="/about-us" onClick={closeMenu}>
+              <Link to="/activities" onClick={closeMenu}>
                 Activities
               </Link>
             </li>
@@ -98,7 +100,14 @@ const Navbar = () => {
             >
               Gallery
             </li>
-            <li className="hover:text-[#0e89d1] cursor-pointer" onClick={closeMenu}>Contact</li>
+            <li
+              className="hover:text-[#0e89d1] cursor-pointer"
+              onClick={closeMenu}
+            >
+              <Link to="/contact" onClick={closeMenu}>
+                Contact
+              </Link>
+            </li>
           </ul>
         </div>
 

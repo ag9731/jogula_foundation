@@ -7,6 +7,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import YourHelp from './components/Your Help/YourHelp';
 import SponserEducation from './components/Sponser Education/SponserEducation';
 import SponserFood from './components/Sponser Food/SponserFood';
+import Volunteer from './components/Volunteer/Volunteer';
+import Contact from './components/Contact/Contact';
+import Activities from './components/Activities/Activities';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
          <Route path="/your-help" element={<YourHelp/>}/>
          <Route path="/sponser-education" element={<SponserEducation/>}/>
          <Route path="/sponser-food" element={<SponserFood/>}/>
+         <Route path="/volunteer" element={<Volunteer/>}/>
+         <Route path="/contact" element={<Contact/>}/>
+         <Route path="/activities" element={<Activities/>}/>
       </Routes>
       <Footer/>
     </div>
