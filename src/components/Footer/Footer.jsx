@@ -14,10 +14,20 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-xl font-bold mb-4">Quick Links</h1>
           <ul className="text-center md:text-left">
-            <li className="mb-2">HOME</li>
-            <li className="mb-2">ABOUT</li>
-            <li className="mb-2">VOLUNTEER</li>
-            <li className="mb-2">CONTACT</li>
+            <li className="mb-2">
+              <Link to="/" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/about-us">About</Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/volunteer">Volunteer</Link>
+            </li>
+            <li className="mb-2">
+              <Link to="/contact">Contact</Link>
+            </li>
           </ul>
         </div>
         <div className="flex flex-col items-center md:items-start">
