@@ -98,7 +98,9 @@ const Navbar = () => {
               className="hover:text-[#0e89d1] cursor-pointer"
               onClick={closeMenu}
             >
-              Gallery
+              <Link to="/gallery" onClick={closeMenu}>
+                Gallery
+              </Link>
             </li>
             <li
               className="hover:text-[#0e89d1] cursor-pointer"

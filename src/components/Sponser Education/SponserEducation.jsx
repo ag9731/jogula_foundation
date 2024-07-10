@@ -1,5 +1,5 @@
 import React from "react";
-import qrCode from "../../assets/Images/QRCode/Qrcode_Jogula_Foundation.jpeg";
+import qrCode from "../../assets/Images/QRCode/qrcode.jpg";
 import "./SponserEducation.css";
 
 const SponserEducation = () => {

@@ -11,6 +11,7 @@ import Volunteer from "./components/Volunteer/Volunteer";
 import Contact from "./components/Contact/Contact";
 import Activities from "./components/Activities/Activities";
 import WhatsAppButton from "./components/WhatsupButton/WhatsupButton";
+import Gallery from "./components/Gallery/Gallery";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/volunteer" element={<Volunteer />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/activities" element={<Activities />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
           <Footer />
         </div>
