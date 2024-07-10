@@ -52,18 +52,15 @@ const Contact = () => {
           <div className="mb-4">
             <h3 className="text-xl font-semibold">Ashrama Address:</h3>
             <p>
-              No. 13/3, 7th Cross, Rathna Nagar, Viswaneedam Post,
-              Chikkagollarahatti, Bangalore- 91
+              No.32/2 Doddabhidrakallu,Near Gurushree School, Nagasandra,
+              Bangalore 560073
             </p>
           </div>
           <div className="mb-4">
-            <h3 className="text-xl font-semibold">Office Address:</h3>
-            <p>
-              #258, 1ST Floor, H.B.C.S Ramakrishna Nagar, Nandini Layout,
-              Bangalore 560096, Karnataka, INDIA
-            </p>
-            <p>Ph no: +91 9591234553</p>
-            <p>Email-id: info@futureindiafoundation.in</p>
+            <h3 className="text-xl font-semibold">Contact:</h3>
+            
+            <p>Ph no: +91 9611295969</p>
+            <p>Email-id: jogulafoundation@gmail.com</p>
           </div>
         </div>
         <div className="w-full md:w-1/2 p-4 bg-gray-100">
