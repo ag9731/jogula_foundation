@@ -1,6 +1,7 @@
 import React from "react";
 import AboutUsBanner from "../../assets/Images/About_Us/AboutUsNew.webp";
 import Section2 from "../../assets/Images/About_Us/JOGULA_N_1.jpg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -128,7 +129,7 @@ const About = () => {
           </div>
           <div>
             <button className="bg-white px-8 py-3 font-bold rounded-md">
-              Donate Now
+              <Link to="/sponser-education">DONATE</Link>
             </button>
           </div>
         </div>
