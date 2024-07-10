@@ -36,11 +36,6 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center mt-4">
-        <button className="bg-slate-900 text-white py-2 px-5">
-          <Link to="/sponser-education">DONATE INR 2200</Link>
-        </button>
-      </div>
     </div>
   );
 };

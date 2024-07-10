@@ -51,16 +51,31 @@ const Volunteer = () => {
         <div className="w-full md:w-2/3 p-4">
           <h2 className="text-2xl font-bold">Need Your Heartful Help</h2>
           <p className="mt-4">
-            The single funds allow you to advise a smaller number of grants, on
-            a schedule or as desired to charitable organizations, causes,
-            countries, or regions.
+            The single funds allow you to advise a smaller number of grants on a
+            schedule or as desired, to charitable organizations, causes,
+            countries, or regions. This flexibility ensures that your
+            contributions have a targeted impact, addressing the specific needs
+            you are passionate about.
           </p>
           <p className="mt-4">
-            Bring to the table win-win survival strategies to ensure proactive
-            domination. At the end of the day, going forward, a new normal that
-            has evolved from generation X is on the runway heading towards a
-            streamlined cloud solution. User-generated content in real-time will
-            have multiple touchpoints for offshoring.
+            Our strategy brings win-win survival techniques to the forefront,
+            ensuring proactive and effective support for our causes. We aim to
+            foster a new normal that resonates with the values and expectations
+            of generation X, and beyond. As we move forward, our approach is
+            geared towards implementing streamlined cloud solutions that enhance
+            efficiency and reach.
+          </p>
+          <p className="mt-4">
+            In today's digital age, user-generated content plays a crucial role
+            in real-time engagement, providing multiple touchpoints for
+            offshoring and broadening our outreach. This dynamic interaction
+            helps us stay connected with our donors and beneficiaries, ensuring
+            transparency and fostering trust.
+          </p>
+          <p className="mt-4">
+            By leveraging modern technology and strategic planning, we can
+            create a sustainable model for charitable giving, empowering
+            communities and driving positive change across the globe.
           </p>
         </div>
         <div className="w-full md:w-1/3 p-4 bg-gray-100">
