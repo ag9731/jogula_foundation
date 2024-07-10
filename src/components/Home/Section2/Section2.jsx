@@ -1,6 +1,7 @@
 import React from "react";
 import "../Section2/Section2.css";
 import AboutImg from "../../../assets/Images/BannerImages/jogula_ngo_banglore_1.webp";
+import { Link } from "react-router-dom";
 
 const Section2 = () => {
   return (
@@ -9,18 +10,19 @@ const Section2 = () => {
         <div className="Section2cards flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row sm:flex-col gap-10 sm:gap-5 md:gap-20 lg:gap-40 justify-center items-center">
           <div className="Sec2Card1">
             <button className="px-16 bg-[#1670c0] py-12 rounded-lg text-white font-bold hover:bg-green-600">
-              Join Hands
+              
+                <Link to="/sponser-education">Join Hands</Link>
+              
             </button>
           </div>
           <div className="Sec2Card2">
             <button className="px-16 bg-[#1670c0] py-12 rounded-lg text-white font-bold hover:bg-green-600">
-              Get Started
+              <Link to="/sponser-education">Get Started</Link>
             </button>
           </div>
         </div>
 
         {/* Gallery */}
-        
 
         {/* About jogula foundation*/}
         <div className="flex flex-col-reverse justify-around lg:flex-row xl:flex-row md:flex-row sm:flex-col-reverse align-content-center items-center">
