@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
-
   const handleExploreClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to the top of the page
   };
@@ -50,8 +49,9 @@ const Footer = () => {
             <span className="font-bold">Email:</span> jogulafoundation@gmail.com
           </p>
           <p className="text-center md:text-left">
-            <span className="font-bold">Address:</span> No.32/2
-            Doddabhidrakallu,Near Gurushree School, Nagasandra, Bangalore 560073
+            <span className="font-bold">Address:</span> #30, 3rd Cross,
+            Thulasinagar, Hosahalli Main Road, Doddagollarahatti, Magadi Road,
+            Bengaluru - 560091
           </p>
         </div>
       </div>

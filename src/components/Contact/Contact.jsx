@@ -52,13 +52,13 @@ const Contact = () => {
           <div className="mb-4">
             <h3 className="text-xl font-semibold">Ashrama Address:</h3>
             <p>
-              No.32/2 Doddabhidrakallu,Near Gurushree School, Nagasandra,
-              Bangalore 560073
+              #30, 3rd Cross, Thulasinagar, Hosahalli Main Road,
+              Doddagollarahatti, Magadi Road, Bengaluru - 560091
             </p>
           </div>
           <div className="mb-4">
             <h3 className="text-xl font-semibold">Contact:</h3>
-            
+
             <p>Ph no: +91 9611295969</p>
             <p>Email-id: jogulafoundation@gmail.com</p>
           </div>
