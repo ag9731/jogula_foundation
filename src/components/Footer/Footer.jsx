@@ -55,6 +55,14 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      <div className="text-center">
+        <p>
+          <a className="text-red-600 bg-black" href="https://www.innomatricstech.com/">
+            Powered By{" "}
+            <span className="text-white">Innomatrics Tech Banglore</span>
+          </a>
+        </p>
+      </div>
     </div>
   );
 };
