@@ -1,6 +1,7 @@
 import React from "react";
 import "../Section2/Section2.css";
-import AboutImg from "../../../assets/Images/BannerImages/jogula_ngo_banglore_1.webp";
+// import AboutImg from "../../../assets/Images/BannerImages/jogula_ngo_banglore_1.webp";
+import AboutImg from "../../../assets/Images/BannerImages/aboutUsHome.webp";
 import { Link } from "react-router-dom";
 
 const Section2 = () => {

@@ -7,6 +7,11 @@ import image5 from "../../assets/Images/Gallery/image5.jpg";
 import image6 from "../../assets/Images/Gallery/image6.jpg";
 import image7 from "../../assets/Images/Gallery/image7.jpg";
 import image8 from "../../assets/Images/Gallery/image8.jpg";
+import image9 from "../../assets/Images/Gallery/image13.jpg";
+import image10 from "../../assets/Images/Gallery/image14.png";
+import image11 from "../../assets/Images/Gallery/image15.jpg";
+import image12 from "../../assets/Images/Gallery/image16.webp";
+import image13 from "../../assets/Images/Gallery/image17.jpg";
 import "tailwindcss/tailwind.css"; // Ensure Tailwind CSS is imported
 import { Link } from "react-router-dom";
 
@@ -20,6 +25,11 @@ const Gallery = () => {
     image6,
     image7,
     image8,
+    image9,
+    image10,
+    image11,
+    image12,
+    image13,
   ];
 
   return (

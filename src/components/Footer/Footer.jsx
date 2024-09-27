@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-xl font-bold mb-4">About Us</h1>
           <p className="text-center md:text-left">
-            Jpgula NGO Foundation warmly welcomes you. We are a beacon of hope
+            Jogula NGO Foundation warmly welcomes you. We are a beacon of hope
             for children in need of basic necessities.
           </p>
         </div>

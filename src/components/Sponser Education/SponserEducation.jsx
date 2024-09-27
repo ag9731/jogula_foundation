@@ -1,5 +1,6 @@
 import React from "react";
-import qrCode from "../../assets/Images/QRCode/qrcode.jpg";
+// import qrCode from "../../assets/Images/QRCode/Qrcode_Jogula_Foundation.jpeg";
+import qrCodeNew from "../../assets/Images/QRCode/qrcode Jogula Foundation.jpg";
 import "./SponserEducation.css";
 
 const SponserEducation = () => {
@@ -98,7 +99,7 @@ const SponserEducation = () => {
               opportunity to gain knowledge and skills that will benefit them
               for the rest of their lives
             </p>
-            <img src={qrCode} alt="QR Code" className="w-full h-auto" />
+            <img src={qrCodeNew} alt="QR Code" className="w-full h-auto" />
           </div>
         </div>
       </div>
