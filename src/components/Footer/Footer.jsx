@@ -56,12 +56,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center">
-        <p>
+        {/* <p>
           <a className="text-red-600 bg-black" href="https://www.innomatricstech.com/">
             Powered By{" "}
             <span className="text-white">Innomatrics Tech Banglore</span>
           </a>
-        </p>
+        </p> */}
       </div>
     </div>
   );
